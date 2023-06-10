@@ -679,6 +679,7 @@ img {
     transform: translate(-50%, -50%);
     width: 408px;
     min-height: 584px;
+    padding: 72px 24px 24px 24px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -707,7 +708,7 @@ img {
     padding: 0;
     cursor: pointer;
     background-color: #E7E9FC;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .popup-close-btn:hover,
@@ -729,9 +730,7 @@ img {
 
 
 
-.popup-form-card {
-    
-}
+.popup-form-card {}
 
 .popup-form-input {
     width: 100%;
@@ -757,7 +756,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 24px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
@@ -767,6 +766,18 @@ img {
     padding: 16px 32px;
     border: none;
     cursor: pointer;
+}
+
+.form-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    margin-bottom: 16px;
 }
 
 /* /POPUP */

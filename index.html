@@ -351,7 +351,7 @@
         </div>
     </footer>
 
-    <div class="popup-container is-hidden" data-modal>
+    <div class="popup-container" data-modal>
         <div class="popup">
             <button type="button" class="popup-close-btn" data-modal-close>
                 <svg class="icon-close-btn" width="8" height="8">
@@ -361,26 +361,47 @@
             <div class="popup-form-card">
                 <p class="form-title">Leave your contacts and we will call you back</p>
                 <form class="form">
-                    <label class="popup-form-label">
-                        Name
-                        <input type="text" name="name" class="popup-form-input" required />
+                    <label class="form-label-name">
+                        <span class="field-name">Name</span>
+                        <input 
+                            type="text" 
+                            name="name" 
+                            class="popup-form-input" 
+                            required 
+                            minlength="2"
+                            pattern="^[A-Za-zА-Яа-яІіЇї]+$"
+                            />
                     </label>
-                    <label class="popup-form-label">
-                        Phone
-                        <input type="tel" name="phone" class="popup-form-input" required />
+                    <label class="form-label-phone">
+                        <span class="field-phone">Phone</span>
+                        <input  
+                            type="tel" 
+                            name="phone" 
+                            class="popup-form-input" 
+                            required 
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            title="xxx-xxx-xx-xx"
+                            />
                     </label>
-                    <label class="popup-form-label">
-                        Email
-                        <input type="email" name="email" class="popup-form-input" required />
+                    <label class="form-label-email">
+                        <span class="field-email">Email</span>
+                        <input 
+                            type="email" 
+                            name="email" 
+                            class="popup-form-input" 
+                            required />
                     </label>
-                    <label class="popup-form-label">
-                        Comment
-                        <textarea name="message" rows="5" class="popup-form-input" placeholder="Text input"></textarea>
+                    <label class="form-label-comment">
+                        <span class="field-comment">Comment</span>
+                        <textarea 
+                            name="message" 
+                            rows="5" 
+                            class="popup-form-input" 
+                            placeholder="Text input">
+                        </textarea>
                     </label>
-                    <label class="popup-form-label">
-                        <input type="checkbox" name="accept" value="check" />
-                        I accept the terms and conditions of the <a href=" ">Privacy Policy</a>
-                    </label>
+                    <input type="checkbox" name="accept" value="check" /> 
+                    <label>I accept the terms and conditions of the <a href=" ">Privacy Policy</a></label>
                     <button type="submit" class="popup-form-button">Send</button>
                 </form>
             </div>
