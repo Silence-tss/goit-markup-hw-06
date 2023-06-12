@@ -771,7 +771,7 @@ img {
 }
 
 .popup-form-button {
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -801,7 +801,6 @@ img {
 }
 
 .form-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -908,7 +907,7 @@ img {
 }
 
 .popup-subscribe-button {
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
