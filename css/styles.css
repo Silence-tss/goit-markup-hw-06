@@ -409,6 +409,11 @@ img {
     max-width: 208px;
 }
 
+.footer-column-3 {
+    max-width: 453px;
+    margin-left: 80px;
+}
+
 .footer-social-list {
     display: flex;
     justify-content: center;
@@ -744,6 +749,7 @@ img {
     padding: 8px 16px 8px 38px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .popup-form-input:focus {
@@ -771,16 +777,27 @@ img {
     font-size: 16px;
     line-height: 1.5;
     display: block;
-    margin: 0 auto;
-    margin-top: 24px;
+    align-self: center;
+    margin-top: 16px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
     border: none;
     cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+.popup-form-button:hover,
+.popup-form-button:focus {
+    color: var(--white);
+    background-color: var(--ocean);
 }
 
 .form-title {
@@ -808,8 +825,150 @@ img {
     width: 18px;
     height: 24px;
     fill:#2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.textarea-form {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-form::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.textarea-form:focus {
+    outline: none;
+    border-color: var(--iris);
+}
+
+.form-label-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.form-label-checkbox a {
+    color: var(--iris);
+}
+
+.form-label-checkbox::before {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    content: '';
+    cursor: pointer;
+}
+
+.check-policy:checked + .form-label-checkbox::before {
+    background-color: var(--ocean);
+    border-color: var(--ocean);
+    background-image: url(/images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+}
+
+/* .check-policy:focus + .form-label-checkbox::before {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+} */
 
 
 /* /POPUP */
+
+/* SUBSCRIBE */
+
+.title-col-subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.form-footer-subscribe {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.popup-subscribe-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: var(--iris);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 165px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+}
+
+.popup-subscribe-button:hover,
+.popup-subscribe-button:focus {
+    color: var(--white);
+    background-color: var(--ocean);
+}
+
+.subscribe-email {
+    width: 100%;
+    height: 40px;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.form-subscribe-email {
+    color: #FFFFFF;
+}
+
+.popup-form-input:focus {
+    outline: none;
+    border-color: var(--iris);
+}
+
+.subscribe-email::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--white);
+}
+
+.subscribe-icon {
+    margin-left: 16px;
+    fill: var(--white)
+}
+
+/* SUBSCRIBE */

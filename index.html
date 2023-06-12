@@ -348,10 +348,32 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="footer-column-3">
+                <p class="title-col-subscribe">Subscribe</p>
+                <form class="form-footer-subscribe">
+
+                    <label class="form-subscribe-email">
+                            <input 
+                            type="email" 
+                            name="email" 
+                            class="subscribe-email" 
+                            placeholder="E-mail" />
+                    </label>
+
+                    <button type="submit" class="popup-subscribe-button">Subscribe <svg class="subscribe-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-subsciption-icon"></use>
+                    </svg></button>
+
+                </form>
+            </div>
+
+
+
         </div>
     </footer>
 
-    <div class="popup-container" data-modal>
+    <div class="popup-container is-hidden" data-modal>
         <div class="popup">
             <button type="button" class="popup-close-btn" data-modal-close>
                 <svg class="icon-close-btn" width="8" height="8">
@@ -408,12 +430,12 @@
                         <textarea 
                             name="message" 
                             rows="5" 
-                            class="" 
-                            placeholder="Text input">
-                        </textarea>
+                            class="textarea-form" 
+                            placeholder="Text input" ></textarea>
                     </label>
-                    <input type="checkbox" name="accept" value="check" /> 
-                    <label>I accept the terms and conditions of the <a href=" ">Privacy Policy</a></label>
+
+                    <input id="user-policy" type="checkbox" name="accept" value="check" class="check-policy visually-hidden" /> 
+                    <label for="user-policy" class="form-label-checkbox">I accept the terms and conditions of the&nbsp;<a href=" ">Privacy Policy</a></label>
                     <button type="submit" class="popup-form-button">Send</button>
                 </form>
             </div>
