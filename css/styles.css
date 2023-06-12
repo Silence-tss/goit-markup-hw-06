@@ -877,7 +877,7 @@ img {
 .check-policy:checked + .form-label-checkbox::before {
     background-color: var(--ocean);
     border-color: var(--ocean);
-    background-image: url(/images/icon-check.svg);
+    background-image: url(./images/icon-check.svg);
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: center;
