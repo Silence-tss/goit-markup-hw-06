@@ -863,7 +863,7 @@ margin-bottom: 8px;
 }
 
 .form-label-checkbox {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     font-size: 12px;
     line-height: 1.17;
