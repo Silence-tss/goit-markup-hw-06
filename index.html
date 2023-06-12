@@ -392,14 +392,12 @@
                                 <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
                             </svg>
                         </div>
-
-                        
                     </div>
 
                     <div class="form-box-phone">
                         <label class="form-label-phone">
-                        <span class="field-label">Phone</span>
-                        <span class="form-label-content">
+                        <span class="field-label">Phone</span></label>
+                        <div class="form-label-content">
                             <input  
                             type="tel" 
                             name="phone" 
@@ -411,14 +409,13 @@
                             <svg class="icon-label">
                                 <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
                             </svg>
-                        </span>
-                        </label>
+                        </div>
                     </div>
 
                     <div class="form-box-email">
                         <label class="form-label-email">
-                        <span class="field-label">Email</span>
-                        <span class="form-label-content">
+                        <span class="field-label">Email</span></label>
+                        <div class="form-label-content">
                             <input 
                             type="email" 
                             name="email" 
@@ -427,24 +424,23 @@
                             <svg class="icon-label">
                                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
                             </svg>
-                        </span>
-                        </label>
+                        </div>
                     </div>
 
                     <div class="form-box-comment">
-                        <label class="form-label-comment">
-                        <span class="field-label">Comment</span>
+                        <label class="form-label-comment"  for="user-comment"></label>
+                        <div class="field-label">Comment</div>
                         <textarea 
                             name="message" 
                             rows="5" 
                             class="textarea-form" 
-                            placeholder="Text input" ></textarea>
-                        </label>
+                            placeholder="Text input" 
+                            id="user-comment" ></textarea>
                     </div>
 
                     <div class="form-box-checkbox">
-                        <input id="user-policy" type="checkbox" name="accept" value="check" class="check-policy visually-hidden" /> 
-                        <label for="user-policy" class="form-label-checkbox">I accept the terms and conditions of the&nbsp;<a href=" ">Privacy Policy</a></label>
+                        <input id="user-privacy" type="checkbox" name="accept" value="check" class="check-policy visually-hidden" /> 
+                        <label for="user-privacy" class="form-label-checkbox">I accept the terms and conditions of the&nbsp;<a href=" ">Privacy Policy</a></label>
                     </div>
 
                         <button type="submit" class="popup-form-button">Send</button>
