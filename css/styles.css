@@ -743,6 +743,14 @@ img {
 margin-bottom: 8px;
 }
 
+.form-box-comment {
+    margin-bottom: 16px;
+}
+
+.form-box-check {
+    margin-bottom: 24px;
+}
+
 .popup-form-input {
     width: 100%;
     height: 40px;
@@ -851,7 +859,6 @@ margin-bottom: 8px;
 .form-label-checkbox {
     display: flex;
     align-items: center;
-    margin-top: 8px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
