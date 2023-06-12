@@ -945,13 +945,10 @@ img {
     border: 1px solid #ffffff;
     border-radius: 4px;
     background-color: transparent;
+    color: var(--white);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
-}
-
-.form-subscribe-email {
-    color: #FFFFFF;
 }
 
 .popup-form-input:focus {
