@@ -873,7 +873,7 @@ margin-bottom: 8px;
 
 }
 
-.form-label-checkbox a {
+.privacy-link {
     color: var(--iris);
 }
 
@@ -898,8 +898,7 @@ margin-bottom: 8px;
 } */
 
 .icon-box {
-    display: flex;
-    justify-content: center;
+    display: inline-flex;    justify-content: center;
     align-items: center;
     width: 16px;
     height: 16px;
@@ -912,7 +911,7 @@ margin-bottom: 8px;
 
 .check-policy:checked + .form-label-checkbox span {
     background-color: var(--ocean);
-    border-color: var(--ocean);
+    border: none;    
     fill: var(--cloud);
 }
 /* .check-policy:focus + .form-label-checkbox::before {
