@@ -875,7 +875,7 @@ margin-bottom: 8px;
     color: var(--iris);
 }
 
-.form-label-checkbox::before {
+/* .form-label-checkbox::before {
     display: block;
     width: 16px;
     height: 16px;
@@ -893,8 +893,25 @@ margin-bottom: 8px;
     background-repeat: no-repeat;
     background-size: 10px;
     background-position: center;
+} */
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-right: 8px;
+    fill: transparent;
 }
 
+.check-policy:checked + .form-label-checkbox span {
+    background-color: var(--ocean);
+    border-color: var(--ocean);
+    fill: var(--cloud);
+}
 /* .check-policy:focus + .form-label-checkbox::before {
     outline: 2px solid rgba(0, 0, 255, 0.5);
 } */
