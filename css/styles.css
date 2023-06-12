@@ -409,7 +409,7 @@ img {
     max-width: 208px;
 }
 
-.footer-column-3 {
+.footer-column-subscribe {
     max-width: 453px;
     margin-left: 80px;
 }
@@ -737,7 +737,10 @@ img {
 .form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+}
+
+.form-box-name {
+margin-bottom: 8px;
 }
 
 .popup-form-input {
@@ -935,7 +938,7 @@ img {
 }
 
 .subscribe-email {
-    width: 264%;
+    width: 264px;
     height: 40px;
     padding: 8px 16px 8px 16px;
     font-size: 12px;
